@@ -117,7 +117,7 @@ const Route =()=>{
                 />
     
                 <Tab.Screen
-                    name="Profile"
+                    name="History"
                     component={historyRoutes}
                     options={{    
                         headerShown: false,
@@ -173,6 +173,7 @@ const Route =()=>{
         return(
             <Stack.Navigator initialRouteName="InApp">
                 <Stack.Screen name="InApp" component={bottomTab} options={{headerShown:false}} />
+                <Stack.Screen name="Profile" component={ProfileScreen} options={{headerShown:false}} />
             </Stack.Navigator>
         )
     }
